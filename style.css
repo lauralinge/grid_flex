@@ -1,0 +1,77 @@
+.box {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 12px 12px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "a a b b"
+      "a a c d"
+      ". . . .";
+      height: 450px;
+      text-align: center;
+  }
+  .a { grid-area: a; }
+  
+  .b { grid-area: b; }
+  
+  .c { grid-area: c; }
+  
+  .d { grid-area: d; }
+  
+  html, body , .box {
+    gap: 22px;
+  }
+    
+  .box * {
+    background: salmon;
+    position: relative;
+  }
+  .box p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+  }
+  
+
+  /* ------ */
+.element {
+    background-color: lightblue;
+    width: 100%;
+    flex: 1;
+    margin: 12px;
+    text-align: center;
+    color: black;
+    padding: 10vh 0;
+}
+.box-2 {
+    display: flex;
+    min-height: 30vh;
+}
+.left, .right {
+    width: 50%;
+}
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.right > *{
+   
+    width: 100%;
+}
+
+.left, .right-2, .right-1 {
+    display: flex;
+}
+
+*{
+  text-align: center;
+}
+
+p{
+  margin-top: 100px;
+}
